@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  quetzales: number=0;
+  resultado: number | null= null;
 
-  constructor() {}
 
+  convertir() {
+    const tasaDeCambio = 8;
+    this.resultado = this.quetzales/tasaDeCambio;
+  }
+    
 }
